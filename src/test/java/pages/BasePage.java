@@ -33,7 +33,7 @@ public class BasePage {
         try {
             wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         } catch (TimeoutException e) {
-            Assert.fail("Time out");
+            Assert.fail("Element is not found");
         }
     }
 }
