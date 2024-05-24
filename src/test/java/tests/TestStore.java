@@ -32,7 +32,6 @@ public class TestStore extends BaseTest {
         CartPage cartPage = new CartPage(driver);
         cartPage.isBagIsPresent();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     @Test
@@ -66,7 +65,6 @@ public class TestStore extends BaseTest {
         checkoutPageStep2.isFleeceItemPricePresent();
         checkoutPageStep2.clickFinishButton();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
 
